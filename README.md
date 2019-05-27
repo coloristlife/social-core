@@ -3,6 +3,9 @@ This is about how to use https://github.com/python-social-auth/social-app-flask
 
 prepare client id and client secret, reference this page: https://simpleisbetterthancomplex.com/tutorial/2016/10/24/how-to-add-social-login-to-django.html
 
+after you get the client id and client secret, go through the steps in below
+
+
 1. install packages
     1.1 install social-auth-app-flask
       $ pip install social-auth-app-flask
@@ -30,9 +33,11 @@ prepare client id and client secret, reference this page: https://simpleisbetter
 
 
     if __name__ == '__main__':
+    
        app.run(debug = True)
        
  3. execute app.py to see what will come up when enter "http://localhost:5000/login/github/" in the browser
+ 
     $ python app.py
  
     You will be directed to github login page, after you enter you credential, you will redirect to another page which is         specified when creating client id and client secret
